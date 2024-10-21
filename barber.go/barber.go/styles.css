@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #004aad; /* Azul */
+    padding: 1rem 0; /* Mantém o padding compacto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo do nav */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo img {
+    height: 200px; /* Aumentamos o tamanho da logo */
+    width: auto;   /* Mantém a proporção */
+    display: block;
+}
+
+.hero {
+    background-image: url('barber_background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    flex-direction: column; /* Coloca os elementos da seção um abaixo do outro */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #004aad; /* Cor do texto do título */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #333; /* Cor padrão para o parágrafo */
+}
+
+.btn {
+    background-color: #ff6b35;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e05d2d;
+}
+
+.info-section {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column; /* Coloca os elementos da seção um abaixo do outro */
+}
+
+.info-section h2 {
+    font-size: 2.5rem;
+    color: #004aad;
+    margin-bottom: 1.5rem;
+}
+
+.info-section p {
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.login-section {
+    padding: 4rem 1rem;
+    background-color: #eaeaea;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Coloca os elementos da seção um abaixo do outro */
+}
+
+.login-section h2 {
+    margin-bottom: 1.5rem; /* Espaço entre o título e o formulário */
+    color: #004aad; /* Cor azul para o título de login */
+}
+
+.login-section label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    color: #333; /* Cor padrão para as labels de Usuário e Senha */
+}
+
+.login-section form {
+    display: flex;
+    flex-direction: column; /* Coloca os campos do formulário um abaixo do outro */
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.login-section input {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #004aad;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+}

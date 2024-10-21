@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Agendar Horário</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/barber.go_centralizado.png" alt="Logo">
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Bem-vindo à Nossa Barbearia</h1>
+        <p>O melhor lugar para cuidar do seu visual</p>
+        <a href="#login" class="btn">Agendar um horário</a>
+    </div>
+
+    <div class="info-section">
+        <h2>Sobre Nós</h2>
+        <p>Viemos para revolucionar os serviços de barbearia. Conheça já os nossos serviços!</p>
+    </div>
+
+    <div id="login" class="login-section">
+        <h2>Login</h2>
+        <form onsubmit="return validateLogin()">
+            <label for="username">Usuário</label>
+            <input type="text" id="username" placeholder="Digite seu usuário" required>
+            <label for="password">Senha</label>
+            <input type="password" id="password" placeholder="Digite sua senha" required>
+            <button type="submit" class="btn">Entrar</button>
+            <button type="button" class="btn" onclick="window.location.href='#cadastro'" style="margin-top: 1rem;">Cadastro</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Validação de login simples (mock)
+        function validateLogin() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username === "" || password === "") {
+                alert('Por favor, preencha todos os campos.');
+                return false;
+            }
+            alert('Login bem-sucedido!');
+            return true;
+        }
+
+        // Função para agendar (mock)
+        function agendarServico() {
+            alert("Serviço agendado com sucesso!");
+        }
+    </script>
+</body>
+</html>
